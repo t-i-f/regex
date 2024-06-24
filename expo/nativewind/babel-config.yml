@@ -4,8 +4,9 @@ path:
   - babel.config.js
 data:
   - find: |
-      /^(.*)(presets)(.*)(babel-preset-expo)(.*)$/m
+      /(presets)(.*?)(\],)/s
     replace: |
-      $1$2$3$4$5\n$1plugins: ["nativewind/babel"],
+      $1$2$3
+          plugins: ["nativewind/babel"],
     already: |
       nativewind/babel
