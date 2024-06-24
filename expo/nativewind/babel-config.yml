@@ -6,6 +6,6 @@ data:
   - find: |
       /^(.*)(presets)(.*)(babel-preset-expo)(.*)$/m
     replace: |
-      $1$2$3$4$5$1plugins: ["nativewind/babel"],
+      $1$2$3$4$5\n$1plugins: ["nativewind/babel"],
     already: |
       nativewind/babel
