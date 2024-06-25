@@ -6,6 +6,6 @@ data:
   - find: |
       /^(.*)(content: \[)(\],)$/m
     replace: |
-      $1$2"./App.{js,jsx,ts,tsx}", "./src/**/*.{js,jsx,ts,tsx}"$3
+      $1$2"./App.{js,jsx,ts,tsx}", "./app/**/*.{js,jsx,ts,tsx}"$3
     already: |
       js,jsx,ts,tsx
